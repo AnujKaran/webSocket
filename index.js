@@ -7,7 +7,7 @@ const server = http.createServer(app);
 const { Server } = require("socket.io");
 
 
-app.use(cors({ credentials: true, origin: "https://socket1-fzg5.vercel.app" }));
+app.use(cors({ credentials: true, origin: "https://web-socket-sandy.vercel.app" }));
 
 const io = new Server(server);
 io.on('connection', (socket) => {
