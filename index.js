@@ -21,7 +21,7 @@ app.use(cors({ credentials: true, origin: "https://web-socket-sandy.vercel.app:1
 
 // app.use(express.static('./public'))
 
-app.get('/', async (req,res)=>{
+app.get('/', async(req,res)=>{
     // res.sendFile('index.html');
     res.status(200).send('hello anuj')
 })
