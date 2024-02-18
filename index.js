@@ -10,7 +10,7 @@ const port = process.env.PORT || 7000;
 // const { Server } = require("socket.io");
 
 
-app.use(cors({ credentials: true, origin: "https://web-socket-sandy.vercel.app" }));
+app.use(cors({ credentials: true, origin: "https://web-socket-sandy.vercel.app:1" }));
 
 // const io = new Server(server);
 // io.on('connection', (socket) => {
