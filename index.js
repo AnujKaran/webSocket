@@ -2,6 +2,9 @@ const express = require('express')
 const http = require('http')
 const app = express();
 const cors = require('cors');
+
+const port = process.env.PORT || 7000;
+
 const server = http.createServer(app);
 
 const { Server } = require("socket.io");
@@ -23,6 +26,6 @@ app.get('/', async (req,res)=>{
     res.status(200).send('hello anuj')
 })
 
-server.listen(7000,()=>{
+server.listen(port,()=>{
     console.log('server listening on 7000')
 })
