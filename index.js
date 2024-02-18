@@ -18,9 +18,9 @@ io.on('connection', (socket) => {
 
 app.use(express.static('./public'))
 
-app.get('/',(req,res)=>{
-    res.sendFile('index.html');
-    // res.send('hello anuj')
+app.get('/', async (req,res)=>{
+    // res.sendFile('index.html');
+    res.status(200).send('hello anuj')
 })
 
 server.listen(7000,()=>{
